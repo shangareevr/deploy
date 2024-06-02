@@ -85,6 +85,9 @@ $('.support__info_wrapper').slick({
       breakpoint: 801,
       settings: { 
         rows: 2,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
       }
     }
 ]
@@ -94,3 +97,4 @@ $('.header__burger').click(function(){
   $(this).toggleClass('active');
   $('.header__nav').toggleClass('active');
 })
+
