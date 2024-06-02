@@ -1223,15 +1223,15 @@ body {
 }
 
 .stages__img .img1 {
-  animation: show1 15s linear infinite;
+  animation: show1 6s linear infinite;
 }
 
 .stages__img .img2 {
-  animation: show2 15s linear infinite;
+  animation: show2 6s linear infinite;
 }
 
 .stages__img .img3 {
-  animation: show3 15s linear infinite;
+  animation: show3 6s linear infinite;
 }
 
 .stages__block {
