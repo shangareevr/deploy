@@ -85,9 +85,6 @@ $('.support__info_wrapper').slick({
       breakpoint: 801,
       settings: { 
         rows: 2,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
       }
     }
 ]
