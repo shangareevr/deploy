@@ -472,7 +472,7 @@ body {
 }
 
 .slick-arrow:not(.major__prev):not(.major__next) {
-  transition: all ease .3s;
+  transition: all ease .6s;
 }
 
 .header {
@@ -647,7 +647,7 @@ body {
 }
 
 .major__video path {
-  transition: all ease .5s;
+  transition: all ease .6s;
 }
 
 .major__text {
@@ -1939,7 +1939,7 @@ body {
 .result__link svg {
   width: 17px;
   height: auto;
-  transition: all ease .5s;
+  transition: all ease .6s;
 }
 
 .result__btn {
