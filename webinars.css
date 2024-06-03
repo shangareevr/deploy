@@ -472,7 +472,7 @@ body {
 }
 
 .slick-arrow:not(.major__prev):not(.major__next) {
-  transition: all ease .3s;
+  transition: all ease .6s;
 }
 
 .header {
@@ -786,8 +786,12 @@ body {
 }
 
 @media (max-width: 1400px) {
+  .start {
+    border-radius: 0 0 80px 80px;
+  }
+
   .start__wrapper {
-    padding: 104px 40px 65px 40px;
+    padding: 104px 40px 87px 40px;
   }
 
   .start__wrapper p {
@@ -801,6 +805,7 @@ body {
 
   .record__wrapper {
     padding-bottom: 0px;
+    margin-top: 40px;
   }
 
   .footer {
@@ -956,6 +961,10 @@ body {
 
   .header__logo_small img {
     width: 145px;
+  }
+
+  .start {
+    border-radius: 0 0 30px 30px;
   }
 
   .start__title {

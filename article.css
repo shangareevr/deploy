@@ -472,7 +472,7 @@ body {
 }
 
 .slick-arrow:not(.major__prev):not(.major__next) {
-  transition: all ease .3s;
+  transition: all ease .6s;
 }
 
 .header {
@@ -620,7 +620,7 @@ body {
 .content__date {
   position: absolute;
   top: 20px;
-  left: 30px;
+  left: 20px;
   background-color: #fff;
   border-radius: 100px;
   padding: 10px 20px;
@@ -953,6 +953,7 @@ body {
 
   .top__wrapper {
     padding: 84px 10px 76px 10px;
+    max-height: 240px;
   }
 
   .content__wrapper {
