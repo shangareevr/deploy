@@ -531,7 +531,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
-  transition: all ease .6s;
+  transition: all ease 6s;
 }
 
 .header__burger {
@@ -2184,12 +2184,15 @@ body {
   gap: 40px;
   align-items: center;
   justify-content: space-between;
+  margin-top: 43px;
 }
 
 .footer__part p {
   max-width: 212px;
 }
-
+.footer__part span {
+  max-width: 212px;
+}
 .footer__imgs {
   display: flex;
   gap: 40px;
@@ -2206,6 +2209,7 @@ body {
   gap: 8px;
   font-size: 16px;
   line-height: 1.5em;
+  width: fit-content;
 }
 
 .footer__links a {
@@ -2239,7 +2243,13 @@ body {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
-
+.footer__title{
+  font-size: 17px;
+  font-family: 'Inter';
+  line-height: 1.5em;
+  margin-top: 30px;
+  font-weight: 400;
+}
 @media (max-width: 1750px) {
   .major__wrapper {
     padding-left: 40px;
@@ -2804,7 +2814,7 @@ body {
   }
 
   .footer {
-    margin-top: 80px;
+    margin-top: 78px;
     border-radius: 40px 40px 0 0;
   }
 
@@ -2820,9 +2830,9 @@ body {
     font-size: 14px;
     line-height: 1.5em;
     max-width: 100%;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 40px;
+    margin-top: 24px;
   }
 
   .footer__imgs {
@@ -2832,11 +2842,16 @@ body {
   .footer__contacts {
     font-size: 20px;
     line-height: 23.16px;
-    max-width: 320px;
   }
 
   .footer__contacts br {
     display: block;
+  }
+  .footer__email{
+    margin-top: 16px;
+  }
+  .footer__title{
+    margin-top: 18px;
   }
 }
 
@@ -3054,6 +3069,9 @@ body {
     height: auto;
     min-width: 202px;
   }
+  .footer__wrapper{
+    padding: 30px 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -3062,6 +3080,20 @@ body {
   }
   .experts__fon{
     display: none;
+  }
+  .footer__wrapper{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .footer__part{
+    width: fit-content;
+  }
+  .footer__links {
+    align-items: center;
+  }
+  .footer__contacts p {
+    text-align: center;
   }
 }
 
@@ -3500,7 +3532,7 @@ body {
     padding: 30px 10px;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 30px;
   }
 
   .footer__left {
@@ -3743,6 +3775,12 @@ body {
     width: 253px;
     right: -119px;
   }
+  .footer__part{
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media (hover: hover) {
@@ -3751,7 +3789,7 @@ body {
   }
 
   .header__btn:hover {
-    background: #6625a5;
+    background: linear-gradient(to right, #6625a5, #6625a5); 
   }
 
   .nav__item:hover {
