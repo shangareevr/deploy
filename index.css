@@ -1853,7 +1853,7 @@ body {
 }
 
 .idea__slider {
-  width: 100%;
+  width: 504px;
   height: 360px;
   border-radius: 20px;
   position: relative;
@@ -1944,7 +1944,7 @@ body {
 
 .result__btn {
   padding: 17px 50px;
-  color: #fff;
+  color: #fff !important;
   background: linear-gradient(to right, rgb(226, 23, 139), rgb(251, 94, 23));
   border-radius: 100px;
   width: -webkit-fit-content;
@@ -2990,8 +2990,7 @@ body {
 
   .about__wrapper {
     margin-top: 50px;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px 20px 0;
     border-radius: 20px;
   }
 
@@ -3059,6 +3058,9 @@ body {
 
 @media (max-width: 900px) {
   .about__img {
+    display: none;
+  }
+  .experts__fon{
     display: none;
   }
 }
@@ -3811,3 +3813,4 @@ body {
     background: #6625a5;
   }
 }
+

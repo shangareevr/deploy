@@ -26,7 +26,7 @@ $('.idea__slider_wrapper').slick({
   slidesToShow:1,
   centerMode:false,
   slidesToScroll:1,
-  variableWidth: true,
+  variableWidth: false,
   prevArrow: $('.idea__prev'),
   nextArrow: $('.idea__next'),
 });

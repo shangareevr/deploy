@@ -1847,7 +1847,9 @@ body {
     width: auto;
     height: 30px;
   }
-
+  .experts__fon{
+    display: none;
+  }
   .header__logo_small img {
     width: 145px;
   }
