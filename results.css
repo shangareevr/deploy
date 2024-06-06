@@ -2269,4 +2269,7 @@ body {
   .nav__item:hover::after {
     width: 100%;
   }
+   .winner__btn:hover{
+      cursor:pointer;
+   }
 }
