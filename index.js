@@ -8,7 +8,7 @@ $('.major__slider-wrapper').slick({
 
 $('.experts__slider_wrapper').slick({
   infinite: true,
-  speed: 500,
+  speed: 300,
   fade: false,
   cssEase: 'linear',
   slidesToShow:4,
@@ -17,10 +17,19 @@ $('.experts__slider_wrapper').slick({
   variableWidth: true,
   prevArrow: $('.experts__prev'),
   nextArrow: $('.experts__next'),
+  cssEase:'ease-in-out',
+  responsive: [
+    {
+      breakpoint: 801,
+      settings: { 
+        speed: 1000,
+      }
+    }
+]
 });
 $('.idea__slider_wrapper').slick({
   infinite: true,
-  speed: 500,
+  speed: 300,
   fade: false,
   cssEase: 'linear',
   slidesToShow:1,
@@ -29,10 +38,19 @@ $('.idea__slider_wrapper').slick({
   variableWidth: false,
   prevArrow: $('.idea__prev'),
   nextArrow: $('.idea__next'),
+  cssEase:'ease-in-out',
+  responsive: [
+    {
+      breakpoint: 801,
+      settings: { 
+        speed: 1000,
+      }
+    }
+]
 });
 $('.news__slider_wrapper').slick({
   infinite: true,
-  speed: 500,
+  speed: 300,
   fade: false,
   cssEase: 'linear',
   slidesToShow:3,
@@ -41,6 +59,15 @@ $('.news__slider_wrapper').slick({
   variableWidth: true,
   prevArrow: $('.news__prev'),
   nextArrow: $('.news__next'),
+  cssEase:'ease-in-out',
+  responsive: [
+    {
+      breakpoint: 801,
+      settings: { 
+        speed: 1000,
+      }
+    }
+]
 });
 
 $('.support__stategic__wrapper').slick({

@@ -531,7 +531,25 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
-  transition: all ease .6s;
+  position: relative;
+}
+.header__btn span{
+  position: relative;
+  z-index: 3;
+}
+.header__btn::after{
+  content: '';
+  display: block;
+  left: 0;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.6s;
 }
 
 .header__burger {
@@ -695,8 +713,25 @@ body {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  transition: all ease .6s;
   justify-content: center;
+  position: relative;
+}
+.slider__arrow img{
+  z-index: 3;
+}
+.slider__arrow::after{
+  content: '';
+  display: block;
+  left: 0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.6s;
 }
 
 .slider__list {
@@ -773,11 +808,14 @@ body {
   font-family: "HalvarBreit";
   font-size: 20px;
   line-height: 23.16px;
+  transition: all ease-in-out 0.6s;
 }
 
-.slider__name img {
+.slider__name svg {
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
+  transition: all ease-in-out 0.6s;
 }
 
 .slider__all {
@@ -798,6 +836,25 @@ body {
   line-height: 1.5em;
   border-radius: 100px;
   transition: all ease .6s;
+  position: relative;
+}
+.slider__all span{
+  position: relative;
+  z-index: 3;
+}
+.slider__all::after{
+  content: '';
+  display: block;
+  left: 0;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.6s;
 }
 
 .footer {
@@ -836,12 +893,15 @@ body {
   gap: 40px;
   align-items: center;
   justify-content: space-between;
+  margin-top: 43px;
 }
 
 .footer__part p {
   max-width: 212px;
 }
-
+.footer__part span {
+  max-width: 212px;
+}
 .footer__imgs {
   display: flex;
   gap: 40px;
@@ -858,6 +918,7 @@ body {
   gap: 8px;
   font-size: 16px;
   line-height: 1.5em;
+  width: fit-content;
 }
 
 .footer__links a {
@@ -891,7 +952,13 @@ body {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
-
+.footer__title{
+  font-size: 17px;
+  font-family: 'Inter';
+  line-height: 1.5em;
+  margin-top: 30px;
+  font-weight: 400;
+}
 @media (max-width: 1400px) {
   .top__wrapper {
     padding: 104px 40px 90px 40px;
@@ -966,7 +1033,7 @@ body {
   }
 
   .footer {
-    margin-top: 80px;
+    margin-top: 78px;
     border-radius: 40px 40px 0 0;
   }
 
@@ -982,9 +1049,9 @@ body {
     font-size: 14px;
     line-height: 1.5em;
     max-width: 100%;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 40px;
+    margin-top: 24px;
   }
 
   .footer__imgs {
@@ -999,6 +1066,12 @@ body {
 
   .footer__contacts br {
     display: block;
+  }
+  .footer__email{
+    margin-top: 16px;
+  }
+  .footer__title{
+    margin-top: 18px;
   }
 }
 
@@ -1121,8 +1194,26 @@ body {
   .slider__list {
     padding-left: 10px;
   }
+  .footer__wrapper{
+    padding: 30px 10px;
+  }
 }
-
+@media (max-width: 900px) {
+  .footer__wrapper{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .footer__part{
+    width: fit-content;
+  }
+  .footer__links {
+    align-items: center;
+  }
+  .footer__contacts p {
+    text-align: center;
+  }
+}
 @media (max-width: 800px) {
   .header__logo {
     width: auto;
@@ -1206,9 +1297,10 @@ body {
     gap: 5px;
   }
 
-  .slider__name img {
+  .slider__name svg {
     width: 26px;
     height: 26px;
+    flex-shrink: 0;
   }
 
   .slider__all {
@@ -1272,12 +1364,12 @@ body {
 }
 
 @media (hover: hover) {
-  .slick-arrow:not(.major__prev):not(.major__next):hover {
-    background: #6625a5;
+  .slider__arrow:hover::after {
+    opacity: 1;
   }
 
-  .header__btn:hover {
-    background: #6625a5;
+  .header__btn:hover::after {
+    opacity: 1;
   }
 
   .nav__item:hover {
@@ -1288,5 +1380,14 @@ body {
 
   .nav__item:hover::after {
     width: 100%;
+  }
+  .slider__name:hover{
+    color: #6625a5;
+  }
+  .slider__name:hover path, line{
+    stroke: #6625A5;
+  }
+  .slider__all:hover::after{
+    opacity: 1;
   }
 }

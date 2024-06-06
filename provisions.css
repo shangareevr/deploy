@@ -531,7 +531,25 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
-  transition: all ease .6s;
+  position: relative;
+}
+.header__btn span{
+  position: relative;
+  z-index: 3;
+}
+.header__btn::after{
+  content: '';
+  display: block;
+  left: 0;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.6s;
 }
 
 .header__burger {
@@ -690,12 +708,15 @@ body {
   gap: 40px;
   align-items: center;
   justify-content: space-between;
+  margin-top: 43px;
 }
 
 .footer__part p {
   max-width: 212px;
 }
-
+.footer__part span {
+  max-width: 212px;
+}
 .footer__imgs {
   display: flex;
   gap: 40px;
@@ -712,6 +733,7 @@ body {
   gap: 8px;
   font-size: 16px;
   line-height: 1.5em;
+  width: fit-content;
 }
 
 .footer__links a {
@@ -745,7 +767,13 @@ body {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
-
+.footer__title{
+  font-size: 17px;
+  font-family: 'Inter';
+  line-height: 1.5em;
+  margin-top: 30px;
+  font-weight: 400;
+}
 @media (max-width: 1400px) {
   .start {
     border-radius: 0 0 80px 80px;
@@ -765,7 +793,7 @@ body {
   }
 
   .footer {
-    margin-top: 80px;
+    margin-top: 78px;
     border-radius: 40px 40px 0 0;
   }
 
@@ -781,9 +809,9 @@ body {
     font-size: 14px;
     line-height: 1.5em;
     max-width: 100%;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 40px;
+    margin-top: 24px;
   }
 
   .footer__imgs {
@@ -798,6 +826,12 @@ body {
 
   .footer__contacts br {
     display: block;
+  }
+  .footer__email{
+    margin-top: 16px;
+  }
+  .footer__title{
+    margin-top: 18px;
   }
 }
 
@@ -908,6 +942,9 @@ body {
     align-items: center;
     gap: 30px;
   }
+  .footer__wrapper{
+    padding: 30px 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -918,6 +955,20 @@ body {
     align-items: flex-start;
     gap: 10px;
     justify-content: flex-start;
+  }
+  .footer__wrapper{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .footer__part{
+    width: fit-content;
+  }
+  .footer__links {
+    align-items: center;
+  }
+  .footer__contacts p {
+    text-align: center;
   }
 }
 
@@ -1026,8 +1077,8 @@ body {
     background: #6625a5;
   }
 
-  .header__btn:hover {
-    background: #6625a5;
+  .header__btn:hover::after {
+    opacity: 1;
   }
 
   .nav__item:hover {

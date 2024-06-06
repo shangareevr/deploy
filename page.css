@@ -531,7 +531,25 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
-  transition: all ease .6s;
+  position: relative;
+}
+.header__btn span{
+  position: relative;
+  z-index: 3;
+}
+.header__btn::after{
+  content: '';
+  display: block;
+  left: 0;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.6s;
 }
 
 .header__burger {
@@ -786,10 +804,9 @@ body {
     background: #6625a5;
   }
 
-  .header__btn:hover {
-    background: #6625a5;
+  .header__btn:hover::after {
+    opacity: 1;
   }
-
   .nav__item:hover {
     color: #6625a5;
     background-clip: text;
