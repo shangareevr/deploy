@@ -10,24 +10,24 @@ $('.experts__slider_wrapper').slick({
   prevArrow: $('.experts__prev'),
   nextArrow: $('.experts__next'),
 });
-$('.winner__wrapper').each(function() {
-	let ths = $(this);
-	ths.find('.winner__list').not(':first').hide();
-	ths.find('.winner__border').click(function() {
-		ths.find('.winner__border').removeClass('active').eq($(this).index()).addClass('active');
-		ths.find('.winner__list').hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass('active');
-});
 
-$('.tab__item').not(':first').hide();
-
+$('.winner__border').click(function(){
+  if(!$(this).hasClass('active')){
+    $('.winner__border').removeClass('active');
+    $(this).addClass('active');
+    $('.winner__list').hide();
+    $(this).closest('.winner__wrapper').find('.winner__list').eq($(this).index()).fadeIn();
+  }
+})
+$('.winner__list').not(':first').hide();
+$('.winner__border').first().addClass('active');
 
 const selectSingle = document.querySelector('.select');
 const selectSingle_title = selectSingle.querySelector('.select__title');
 const selectSingle_labels = selectSingle.querySelectorAll('.select__label');
 $('.__select__content').hide();
 // Toggle menu
-selectSingle_title.addEventListener('click', () => {
+selectSingle.addEventListener('click', () => {
   if ('active' === selectSingle.getAttribute('data-state')) {
     selectSingle.setAttribute('data-state', '');
     $('.select__content').hide();
