@@ -500,6 +500,10 @@ body {
   width: auto;
   height: 37px;
 }
+.header__logo img {
+  width: auto;
+  height: 100%;
+}
 
 .header__nav {
   display: flex;
@@ -544,7 +548,7 @@ body {
   border-radius: 100px;
   position: absolute;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.1);
+  background: #FB5E17;;
   top: 0;
   opacity: 0;
   width: 100%;
@@ -726,7 +730,7 @@ body {
   border-radius: 50%;
   position: absolute;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.1);
+  background: #FB5E17;;
   top: 0;
   opacity: 0;
   width: 100%;
@@ -849,7 +853,7 @@ body {
   border-radius: 100px;
   position: absolute;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.1);
+  background: #FB5E17;;
   top: 0;
   opacity: 0;
   width: 100%;

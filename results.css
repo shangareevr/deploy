@@ -500,6 +500,10 @@ body {
   width: auto;
   height: 37px;
 }
+.header__logo img {
+  width: auto;
+  height: 100%;
+}
 
 .header__nav {
   display: flex;
@@ -544,7 +548,7 @@ body {
   border-radius: 100px;
   position: absolute;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.1);
+  background: #FB5E17;
   top: 0;
   opacity: 0;
   width: 100%;
@@ -1025,9 +1029,6 @@ body {
   cursor: not-allowed !important;
   pointer-events: all !important;
 }
-.winner__border.active .winner__btn::after {
-  background: rgba(0, 0, 0, 0.1);
-}
 .winner__btn span{
   position: relative;
   z-index: 3;
@@ -1275,7 +1276,7 @@ body {
   border-radius: 100px;
   position: absolute;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.1);
+  background: #FB5E17;
   top: 0;
   opacity: 0;
   width: 100%;

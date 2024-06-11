@@ -21,7 +21,7 @@ $('.winner__border').click(function(){
 })
 $('.winner__list').not(':first').hide();
 $('.winner__border').first().addClass('active');
-
+$('.tab__item').not(':first').hide();
 const selectSingle = document.querySelector('.select');
 const selectSingle_title = selectSingle.querySelector('.select__title');
 const selectSingle_labels = selectSingle.querySelectorAll('.select__label');
