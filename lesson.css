@@ -1366,7 +1366,14 @@ body {
     height: 192px;
   }
 }
-
+@media (max-width: 400px) {
+  .footer__part{
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    gap: 20px;
+  }
+}
 @media (hover: hover) {
   .slider__arrow:hover::after {
     opacity: 1;

@@ -2355,6 +2355,12 @@ body {
     width: 253px;
     right: -121px;
   }
+  .footer__part{
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media (hover: hover) {
