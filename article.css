@@ -1124,7 +1124,14 @@ body {
     line-height: 1em;
   }
 }
-
+@media (max-width: 400px) {
+  .footer__part{
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    gap: 20px;
+  }
+}
 @media (hover: hover) {
   .slick-arrow:not(.major__prev):not(.major__next):hover {
     background: #6625a5;
