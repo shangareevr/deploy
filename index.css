@@ -3462,6 +3462,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding-bottom: 80px;
   }
 
   .footer__left {
