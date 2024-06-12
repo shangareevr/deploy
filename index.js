@@ -2,8 +2,8 @@ $('.major__slider-wrapper').slick({
   speed: 1000,
   fade: true,
   cssEase: 'linear',
-  autoplay: true,
-      autoplaySpeed: 3000,
+  // autoplay: true,
+  //     autoplaySpeed: 5000,
   prevArrow: $('.major__prev'),
   nextArrow: $('.major__next'),
 });
