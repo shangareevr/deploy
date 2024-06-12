@@ -2749,6 +2749,7 @@ body {
 
   .footer__wrapper {
     padding: 60px 40px;
+    padding-bottom: 80px;
   }
 
   .footer__left {
@@ -2990,6 +2991,7 @@ body {
   }
   .footer__wrapper{
     padding: 30px 10px;
+    padding-bottom: 80px;
   }
 }
 
