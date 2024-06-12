@@ -2308,10 +2308,6 @@ body {
     bottom: 9px;
     right: 89px;
   }
-  .major__start {
-    margin-top: 15px;
-  }
-
 }
 
 @media (max-width: 1500px) {
@@ -2838,10 +2834,6 @@ body {
 
   .major__slider {
     top: -30px;
-  }
-
-  .major__start {
-    margin-top: 47px;
   }
 }
 
@@ -3534,7 +3526,14 @@ body {
   .major__next svg {
     width: 18px;
   }
-    .stages__list {
+  .major__start{
+    width: calc(100% - 36px);
+    text-align: center;
+    padding: 20.5px 0;
+    line-height: 1rem;
+
+  }
+  .stages__list {
     flex-direction: column;
     gap: 10px;
   }
