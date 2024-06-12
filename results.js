@@ -1,12 +1,13 @@
 $('.experts__slider_wrapper').slick({
   infinite: true,
-  speed: 500,
+  speed: 300,
   fade: false,
   cssEase: 'linear',
   slidesToShow:4,
   centerMode:false,
   slidesToScroll:1,
   variableWidth: true,
+  cssEase:'ease-in-out',
   prevArrow: $('.experts__prev'),
   nextArrow: $('.experts__next'),
 });

@@ -697,6 +697,7 @@ body {
 
 .record__name svg {
   width: 32px;
+  flex-shrink: 0;
   height: 32px;
   transition: all ease-in-out 0.6s;
 }
