@@ -1151,12 +1151,16 @@ body {
   left: -88px;
 }
 
-.stages__img img {
+.stages__img picture {
   position: absolute;
   width: 100%;
   transition: all .6s ease;
+  object-fit: contain;
 }
-
+.stages__img picture img{
+  width: 184px;
+  height: 184px;
+}
 .stages__img .img1 {
   animation: show1 6s linear infinite;
 }
@@ -2495,6 +2499,10 @@ body {
     width: 124px;
     height: 124px;
   }
+  .stages__img picture img{
+    width: 124px;
+    height: 124px;
+  }
 
   .stages__block {
     border-radius: 0px 100px 100px 90px;
@@ -3185,7 +3193,10 @@ body {
     width: 84px;
     height: 84px;
   }
-
+  .stages__img picture img{
+    width: 84px;
+    height: 84px;
+  }
   .stages__block {
     font-size: 12px;
     line-height: 13.9px;
