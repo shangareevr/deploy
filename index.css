@@ -1151,13 +1151,13 @@ body {
   left: -88px;
 }
 
-.stages__img picture {
+.stages__img video {
   position: absolute;
   width: 100%;
   transition: all .6s ease;
   object-fit: contain;
 }
-.stages__img picture img{
+.stages__img{
   width: 184px;
   height: 184px;
 }
