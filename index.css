@@ -1162,15 +1162,15 @@ body {
   height: 184px;
 }
 .stages__img .img1 {
-  animation: show1 6s linear infinite;
+  animation: show1 9s linear infinite;
 }
 
 .stages__img .img2 {
-  animation: show2 6s linear infinite;
+  animation: show2 9s linear infinite;
 }
 
 .stages__img .img3 {
-  animation: show3 6s linear infinite;
+  animation: show3 9s linear infinite;
 }
 
 .stages__block {
@@ -1296,23 +1296,23 @@ body {
 
 @keyframes show1 {
   0% {
-    display: inline-block;
+    display: block;
   }
 
   30% {
-    display: inline-block;
+    display: block;
   }
 
-  31% {
+  30.1% {
     display: none;
   }
 
-  90% {
-    display: inline-block;
+  99% {
+    display: none;
   }
 
   100% {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -1322,14 +1322,16 @@ body {
   }
 
   30% {
-    display: inline-block;
+    display: none;
+  }
+  30.1% {
+    display: block;
+  }
+  66% {
+    display: block;
   }
 
-  66% {
-    display: inline-block;
-  }
-
-  66% {
+  66.1% {
     display: none;
   }
 
@@ -1346,16 +1348,18 @@ body {
   33% {
     display: none;
   }
-
   66% {
-    display: inline-block;
+    display: none;
+  }
+  66.1% {
+    display: block;
   }
 
-  90% {
-    display: inline-block;
+  99% {
+    display: block;
   }
 
-  90% {
+  99% {
     display: none;
   }
 
