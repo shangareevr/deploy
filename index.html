@@ -7,6 +7,12 @@
   <title>Главная</title>
   <link rel="stylesheet" href="./slider.css">
   <link rel="stylesheet" href="./index.css">
+   <style>
+    .stages__img video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -307,21 +313,21 @@
                 <source src="./img/klubok3.mov" type="video/mov"> 
                 <source src="./img/klubok3.webm" type="video/webm"> 
               </video>
-               <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-                  document.querySelectorAll('video').forEach(video => {
-                    
-                    video.addEventListener('canplaythrough', () => {
-                      video.play();
-                    });
-            
-                    video.setAttribute('autoplay', '');
-                    video.setAttribute('loop', '');
-                  });
-                });
-              </script>
             </div>
-            
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+              document.querySelectorAll('video').forEach(video => {
+                video.addEventListener('canplaythrough', () => {
+                  video.play();
+                });
+        
+                video.setAttribute('autoplay', '');
+                video.setAttribute('loop', '');
+              });
+            });
+          </script>
+                    
             <a href='' class="stages__block"><span>А пока ты ждешь, переходи в  <br>  наш Телеграм</span></a>
           </div>
         </div>
