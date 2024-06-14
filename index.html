@@ -307,6 +307,19 @@
                 <source src="./img/klubok3.mov" type="video/mov"> 
                 <source src="./img/klubok3.webm" type="video/webm"> 
               </video>
+               <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                  document.querySelectorAll('video').forEach(video => {
+                    
+                    video.addEventListener('canplaythrough', () => {
+                      video.play();
+                    });
+            
+                    video.setAttribute('autoplay', '');
+                    video.setAttribute('loop', '');
+                  });
+                });
+              </script>
             </div>
             
             <a href='' class="stages__block"><span>А пока ты ждешь, переходи в  <br>  наш Телеграм</span></a>
