@@ -7,6 +7,12 @@
   <title>Главная</title>
   <link rel="stylesheet" href="./slider.css">
   <link rel="stylesheet" href="./index.css">
+   <style>
+    .stages__img video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -295,15 +301,15 @@
           </div>
           <div class="stages__clew">
             <div class="stages__img">
-              <video class="img1" autoplay loop playsinline muted poster="./img/klubok1.png"> 
+              <video class="img1" preload="metadata" muted autoplay loop disablePictureInPicture playsinline webkit-playsinline poster="./img/klubok1.png"> 
                 <source src="./img/klubok1.mov" type="video/mov"> 
                 <source src="./img/klubok1.webm" type="video/webm"> 
               </video> 
-              <video class="img2"  autoplay loop playsinline muted poster="./img/klubok2.png"> 
+              <video class="img2" preload="metadata" muted autoplay loop disablePictureInPicture playsinline webkit-playsinline poster="./img/klubok2.png"> 
                 <source src="./img/klubok2.mov" type="video/mov"> 
                 <source src="./img/klubok2.webm" type="video/webm"> 
               </video> 
-              <video class="img3"  autoplay loop playsinline muted poster="./img/klubok3.png"> 
+              <video class="img3" preload="metadata" muted autoplay loop disablePictureInPicture playsinline webkit-playsinline poster="./img/klubok3.png"> 
                 <source src="./img/klubok3.mov" type="video/mov"> 
                 <source src="./img/klubok3.webm" type="video/webm"> 
               </video>
@@ -321,8 +327,21 @@
                   });
                 </script>
             </div>
-            
-            <a href='' class="stages__block">А пока ты ждешь, переходи в  <br>  наш Телеграм</a>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+              document.querySelectorAll('video').forEach(video => {
+                video.addEventListener('canplaythrough', () => {
+                  video.play();
+                });
+        
+                video.setAttribute('autoplay', '');
+                video.setAttribute('loop', '');
+              });
+            });
+          </script>
+                    
+            <a href='' class="stages__block"><span>А пока ты ждешь, переходи в  <br>  наш Телеграм</span></a>
           </div>
         </div>
         <div class="stages__list">
