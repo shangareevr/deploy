@@ -2,8 +2,8 @@ $('.major__slider-wrapper').slick({
   speed: 1000,
   fade: true,
   cssEase: 'linear',
-  // autoplay: true,
-  //     autoplaySpeed: 5000,
+  autoplay: true,
+      autoplaySpeed: 5000,
   prevArrow: $('.major__prev'),
   nextArrow: $('.major__next'),
 });
@@ -127,3 +127,4 @@ $('.header__burger').click(function(){
   $('.header__nav').toggleClass('active');
 })
 
+$('video').trigger('play');
