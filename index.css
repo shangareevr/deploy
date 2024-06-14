@@ -1174,7 +1174,8 @@ body {
 }
 
 .stages__block {
-  position: relative;
+   display:block;
+   position: relative;
   background: linear-gradient(to right, rgb(226, 23, 139), rgb(251, 94, 23));
   border-radius: 0px 100px 100px 70px;
   padding: 10px 20px 12px 20px;
