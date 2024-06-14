@@ -1182,7 +1182,7 @@ body {
   max-width: 230px;
   text-transform: uppercase;
   top: -49px;
-  color: #fff;
+  color: #fff !important;
   z-index: 5;
 }
 
