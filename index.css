@@ -2883,7 +2883,9 @@ body {
     padding-top: 66px;
     padding-bottom: 109px;
   }
-
+.major__slider {
+        top: -30px;
+    }
   .major__content {
     order: 2;
     margin-top: -15px;
@@ -2959,9 +2961,7 @@ body {
     align-items: center;
     gap: 30px;
   }
-.major__slider {
-        top: -30px;
-    }
+
   .about {
     padding: 0 10px;
   }
