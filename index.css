@@ -734,6 +734,9 @@ body {
 .major__slider-wrapper .slick-slide {
   position: relative;
 }
+.major__slide:not(:nth-child(1)) {
+  opacity: 0;
+}
 
 .major__slider-wrapper .slick {
   width: 756px !important;
