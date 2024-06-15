@@ -2959,7 +2959,9 @@ body {
     align-items: center;
     gap: 30px;
   }
-
+.major__slider {
+        top: -30px;
+    }
   .about {
     padding: 0 10px;
   }
